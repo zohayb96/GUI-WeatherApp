@@ -1,0 +1,63 @@
+@import '~style/helpers';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/mountain.png');
+	color: #fff;
+	width: 414px;
+	height: 736px;
+	text-align: center;
+	padding-top: 80px;
+	margin: 0 auto;
+	justify-content: flex-end;
+	align-content: flex-end;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.details {
+	flex: 4;
+}
+.city {
+	flex: 1;
+	font-size: 1.7em;
+	font-weight: 400;
+}
+
+.days {
+	margin-bottom: 550px;
+	align-content: space-between;
+	align-content: flex-end;
+	background-color: rgba(0, 0, 0, 0.52);
+}
+
+.day {
+	flex: 5;
+	padding-bottom: 5px;
+	align-content: flex-end;
+	background-color: rgba(43, 10, 10, 0.52);
+}
+
+.conditions {
+	flex: 1;
+	font-size: 1em;
+}
+.temperature {
+	flex: 2;
+	margin-top: 0;
+	font-size: 4.8em;
+	font-weight: 300;
+	letter-spacing: -12px;
+}
+.filled:after {
+	content: '°';
+	margin: 0 0 0 1rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
